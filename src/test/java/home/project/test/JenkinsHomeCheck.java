@@ -17,7 +17,7 @@ public class JenkinsHomeCheck extends TestBase{
     @DisplayName("test")
     void gazetaTest(){
         step("Open main page",() ->{
-            open("https://www.gazeta.ru");
+            open("");
         });
 
         step("Check logo gazeta", ()->{

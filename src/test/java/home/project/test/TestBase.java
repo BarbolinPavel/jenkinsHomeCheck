@@ -15,7 +15,7 @@ public class TestBase {
 
         //Configuration.browser="firefox";
         Configuration.browserSize = "1920x1080";
-//        Configuration.baseUrl = "https://www.gazeta.ru";
+        Configuration.baseUrl = "https://www.gazeta.ru";
     }
 
     @AfterEach
