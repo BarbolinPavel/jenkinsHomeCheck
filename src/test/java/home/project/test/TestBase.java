@@ -11,14 +11,11 @@ import org.junit.jupiter.api.BeforeEach;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+
         //Configuration.browser="firefox";
         Configuration.browserSize = "1920x1080";
-//        Configuration.baseUrl = "https://www.gazeta.ru";
-    }
-
-    @BeforeEach
-    void addListener() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        Configuration.baseUrl = "https://www.gazeta.ru";
     }
 
     @AfterEach
